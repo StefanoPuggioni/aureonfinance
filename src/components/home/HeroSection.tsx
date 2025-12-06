@@ -56,20 +56,20 @@ export function HeroSection() {
 
           {/* Image */}
           <div className="relative animate-fade-in lg:animate-slide-in-right">
-            <div className="relative rounded-2xl overflow-hidden shadow-elegant-xl">
+            <div className="relative overflow-hidden shadow-elegant-xl">
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                alt="Team di professionisti in ufficio elegante"
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                alt="Studio legale professionale"
                 className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
             </div>
             
             {/* Floating card */}
-            <div className="absolute -bottom-6 -left-6 bg-card text-card-foreground p-5 rounded-xl shadow-elegant-lg max-w-[260px] hidden md:block">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-full bg-success/10 flex items-center justify-center">
-                  <CheckCircle2 className="w-5 h-5 text-success" />
+            <div className="absolute -bottom-6 -left-6 bg-card text-card-foreground p-5 shadow-elegant-lg max-w-[260px] hidden md:block border-l-4 border-accent">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-primary/10 flex items-center justify-center">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-semibold text-sm">+1600 persone</p>

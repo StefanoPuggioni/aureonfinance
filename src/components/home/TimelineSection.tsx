@@ -59,14 +59,14 @@ export function TimelineSection() {
               <div key={item.step} className="relative">
                 {/* Dot */}
                 <div className="relative z-10 w-full flex justify-center mb-6">
-                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-elegant">
+                  <div className="w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-elegant">
                     {item.step}
                   </div>
                 </div>
                 
                 {/* Content */}
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent mb-3">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/10 text-accent mb-3">
                     <item.icon className="w-5 h-5" />
                   </div>
                   <h4 className="font-semibold text-foreground text-sm mb-2">
@@ -92,16 +92,16 @@ export function TimelineSection() {
               
               {/* Dot */}
               <div className="relative z-10 flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-elegant">
+                <div className="w-10 h-10 bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-elegant">
                   {item.step}
                 </div>
               </div>
               
               {/* Content */}
               <div className="flex-1 pb-6">
-                <div className="bg-card rounded-xl p-5 border border-border">
+                <div className="bg-card p-5 border-l-2 border-primary">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center">
+                    <div className="w-9 h-9 bg-accent/10 flex items-center justify-center">
                       <item.icon className="w-4 h-4 text-accent" />
                     </div>
                     <h4 className="font-semibold text-foreground">

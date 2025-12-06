@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -44,7 +44,7 @@
     --input: 220 13% 87%;
     --ring: 213 72% 14%;
     
-    --radius: 0.625rem;
+    --radius: 0.25rem;
     
     /* Custom variables */
     --navy: 213 72% 14%;
@@ -123,7 +123,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight text-foreground;
+    @apply font-serif font-semibold tracking-tight text-foreground;
   }
 }
 

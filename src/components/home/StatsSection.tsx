@@ -41,13 +41,13 @@ export function StatsSection() {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className="bg-background rounded-xl p-6 text-center border border-border hover:shadow-elegant-lg transition-all duration-300 group"
+              className="bg-background p-6 text-center border-t-2 border-primary hover:shadow-elegant-lg transition-all duration-300 group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/5 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/5 text-primary mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <stat.icon className="w-6 h-6" />
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              <div className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">
                 {stat.value}
                 <span className="text-accent">{stat.suffix}</span>
               </div>

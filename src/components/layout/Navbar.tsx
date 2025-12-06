@@ -49,14 +49,14 @@ export function Navbar() {
           <div className="flex h-16 md:h-20 items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center group-hover:bg-secondary transition-colors">
+              <div className="w-10 h-10 bg-primary flex items-center justify-center group-hover:bg-secondary transition-colors">
                 <Shield className="w-5 h-5 text-primary-foreground" />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-semibold text-foreground leading-tight">
+                <span className="text-lg font-serif font-semibold text-foreground leading-tight">
                   Aureon Asset Recovery
                 </span>
-                <span className="text-[10px] text-muted-foreground leading-tight hidden sm:block">
+                <span className="text-[10px] text-muted-foreground leading-tight hidden sm:block uppercase tracking-wider">
                   Soluzioni strutturate per vittime di truffe finanziarie
                 </span>
               </div>
@@ -69,10 +69,10 @@ export function Navbar() {
                   key={link.href}
                   to={link.href}
                   className={cn(
-                    "px-4 py-2 text-sm font-medium rounded-lg transition-colors",
+                    "px-4 py-2 text-sm font-medium transition-colors",
                     location.pathname === link.href
-                      ? "text-primary bg-muted"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                      ? "text-primary border-b-2 border-primary"
+                      : "text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {link.name}
@@ -88,7 +88,7 @@ export function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+              className="lg:hidden p-2 hover:bg-muted transition-colors"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
@@ -106,16 +106,16 @@ export function Navbar() {
               isMobileMenuOpen ? "max-h-96 pb-4" : "max-h-0"
             )}
           >
-            <div className="flex flex-col gap-1 pt-2">
+            <div className="flex flex-col gap-1 pt-2 border-t border-border">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
                   className={cn(
-                    "px-4 py-3 text-sm font-medium rounded-lg transition-colors",
+                    "px-4 py-3 text-sm font-medium transition-colors border-l-2",
                     location.pathname === link.href
-                      ? "text-primary bg-muted"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                      ? "text-primary border-primary bg-muted/50"
+                      : "text-muted-foreground hover:text-foreground border-transparent hover:border-muted"
                   )}
                 >
                   {link.name}

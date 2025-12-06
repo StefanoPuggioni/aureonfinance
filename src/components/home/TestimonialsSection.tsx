@@ -38,11 +38,11 @@ export function TestimonialsSection() {
           {caseStudies.map((study, index) => (
             <div
               key={index}
-              className="bg-background rounded-2xl p-6 border border-border hover:shadow-elegant-lg transition-all duration-300"
+              className="bg-background p-6 border border-border border-l-4 border-l-primary hover:shadow-elegant-lg transition-all duration-300"
             >
               {/* Profile */}
               <div className="flex items-center gap-3 mb-4 pb-4 border-b border-border">
-                <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
+                <div className="w-10 h-10 bg-muted flex items-center justify-center">
                   <User className="w-5 h-5 text-muted-foreground" />
                 </div>
                 <p className="text-sm font-medium text-foreground">{study.profile}</p>
@@ -51,7 +51,7 @@ export function TestimonialsSection() {
               {/* Details */}
               <div className="space-y-4">
                 <div>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground uppercase tracking-wider mb-1">
                     <AlertCircle className="w-3 h-3" />
                     <span>Problema</span>
                   </div>
@@ -59,7 +59,7 @@ export function TestimonialsSection() {
                 </div>
 
                 <div>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground uppercase tracking-wider mb-1">
                     <Clock className="w-3 h-3" />
                     <span>Intervento</span>
                   </div>
@@ -67,7 +67,7 @@ export function TestimonialsSection() {
                 </div>
 
                 <div>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground uppercase tracking-wider mb-1">
                     <TrendingUp className="w-3 h-3" />
                     <span>Esito</span>
                   </div>
@@ -78,12 +78,12 @@ export function TestimonialsSection() {
               {/* Progress bar */}
               <div className="mt-4 pt-4 border-t border-border">
                 <div className="flex justify-between text-xs mb-2">
-                  <span className="text-muted-foreground">Tasso di recupero</span>
+                  <span className="text-muted-foreground uppercase tracking-wider">Tasso di recupero</span>
                   <span className="font-semibold text-foreground">{study.percentage}%</span>
                 </div>
-                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                <div className="h-1 bg-muted overflow-hidden">
                   <div
-                    className="h-full bg-success rounded-full transition-all duration-1000"
+                    className="h-full bg-success transition-all duration-1000"
                     style={{ width: `${study.percentage}%` }}
                   />
                 </div>

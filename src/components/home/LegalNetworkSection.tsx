@@ -29,9 +29,9 @@ export function LegalNetworkSection() {
               {expertise.map((item) => (
                 <div
                   key={item.text}
-                  className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border"
+                  className="flex items-center gap-3 p-4 bg-card border-l-2 border-primary"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-primary/5 flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-5 h-5 text-primary" />
                   </div>
                   <span className="text-sm font-medium text-foreground">
@@ -44,18 +44,18 @@ export function LegalNetworkSection() {
 
           {/* Image */}
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-elegant-xl">
+            <div className="overflow-hidden shadow-elegant-xl">
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                alt="Studio legale professionale"
+                src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                alt="Biblioteca legale professionale"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
             </div>
             
             {/* Badge */}
-            <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-4 rounded-xl shadow-elegant-lg hidden md:block">
-              <p className="text-2xl font-bold">12+</p>
+            <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-4 shadow-elegant-lg hidden md:block">
+              <p className="text-2xl font-serif font-bold">12+</p>
               <p className="text-sm text-primary-foreground/80">Giurisdizioni</p>
             </div>
           </div>
