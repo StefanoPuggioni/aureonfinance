@@ -32,9 +32,9 @@ export function RecoveryUsageSection() {
           {usageOptions.map((option, index) => (
             <div
               key={option.title}
-              className="bg-background rounded-2xl p-8 border border-border hover:shadow-elegant-lg transition-all duration-300 text-center group"
+              className="bg-background p-8 border-t-2 border-accent hover:shadow-elegant-lg transition-all duration-300 text-center group"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/5 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/5 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                 <option.icon className="w-8 h-8" />
               </div>
               

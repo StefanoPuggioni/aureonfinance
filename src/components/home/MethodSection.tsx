@@ -43,15 +43,15 @@ export function MethodSection() {
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="relative bg-background rounded-xl p-6 border border-border hover:shadow-elegant-lg transition-all duration-300 group"
+              className="relative bg-background p-6 border-l-2 border-primary hover:shadow-elegant-lg transition-all duration-300 group"
             >
               {/* Step number */}
-              <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold flex items-center justify-center shadow-elegant">
+              <div className="absolute -top-3 -left-3 w-8 h-8 bg-primary text-primary-foreground text-sm font-bold flex items-center justify-center shadow-elegant">
                 {index + 1}
               </div>
               
               <div className="mb-4 mt-2">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
                   <step.icon className="w-6 h-6" />
                 </div>
               </div>

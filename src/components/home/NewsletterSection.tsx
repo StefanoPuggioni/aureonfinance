@@ -42,7 +42,7 @@ export function NewsletterSection() {
     <section id="newsletter" className="section-padding">
       <div className="container-custom">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/5 text-primary mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/5 text-primary mb-6">
             <Mail className="w-8 h-8" />
           </div>
           
